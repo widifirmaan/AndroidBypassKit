@@ -1,0 +1,43 @@
+Version 2.15
+PblHack: Error - 1836597052
+Did not receive Sahara hello packet from device
+
+!!!!!!!! WARNING: Flash programmer failed to load trying to continue !!!!!!!!!
+
+Erasing Disk
+.0" encoding="UTF-8" ?><data><log value="XML (0 bytes) not validated" /></data><?xml version="1.0" encoding="UTF-8" ?><data><response value="NAK" /></data>
+Programming device using SECTOR_SIZE=512
+
+<?xml version = "1.0" ?><data><configure MemoryName="emmc" ZLPAwareHost="1" SkipStorageInit="0" SkipWrite="0" MaxPayloadSizeToTargetInBytes="1048576"/></data>
+<?xml version="1.0" encoding="UTF-8" ?><data><log value="logbuf@0x080702F0 fh@0x0806D158" /></data>
+<?xml version="1.0" encoding="UTF-8" ?><data><response value="ACK" MinVersionSupported="1" MemoryName="eMMC" MaxPayloadSizeFromTargetInBytes="4096" MaxPayloadSizeToTargetInBytes="1048576" MaxPayloadSizeToTargetInBytesSupported="1048576" MaxXMLSizeInBytes="4096" Version="1" TargetName="8917" /></data>
+<?xml version="1.0" encoding="UTF-8" ?><data><response value="ACK" MinVersionSupported="1" MemoryName="eMMC" MaxPayloadSizeFromTargetInBytes="4096" MaxPayloadSizeToTargetInBytes="1048576" MaxPayloadSizeToTargetInBytesSupported="1048576" MaxXMLSizeInBytes="4096" Version="1" TargetName="8917" /></data>
+Connected to flash programmer, starting download
+<?xml version="1.0" ?><data>
+<read SECTOR_SIZE_IN_BYTES="512" num_partition_sectors="1" physical_partition_number="0" start_sector="1"/>
+</data>
+<?xml version="1.0" encoding="UTF-8" ?><data><response value="ACK" rawmode="true" /></data>
+Sectors remaining 1
+Downloaded raw image at speed 512 KB/s
+<?xml version="1.0" encoding="UTF-8" ?><data><log value="Finished sector address 0" /></data>
+<?xml version="1.0" encoding="UTF-8" ?><data><response value="ACK" rawmode="false" /></data>
+<?xml version="1.0" ?><data>
+<read SECTOR_SIZE_IN_BYTES="512" num_partition_sectors="32" physical_partition_number="0" start_sector="2"/>
+</data>
+<?xml version="1.0" encoding="UTF-8" ?><data><response value="ACK" rawmode="true" /></data>
+Sectors remaining 32
+Downloaded raw image at speed 16384 KB/s
+<?xml version="1.0" encoding="UTF-8" ?><data><log value="Finished sector address 0" /></data>
+<?xml version="1.0" encoding="UTF-8" ?><data><response value="ACK" rawmode="false" /></data>
+Zeroing out area
+In offset: 0 out offset: 10816512 sectors: 64
+<?xml version="1.0" ?><data>
+<program SECTOR_SIZE_IN_BYTES="512" num_partition_sectors="64" physical_partition_number="0" start_sector="10816512"/>
+</data>
+<?xml version="1.0" encoding="UTF-8" ?><data><log value="start 10816512, num 64" /></data>
+<?xml version="1.0" encoding="UTF-8" ?><data><response value="ACK" rawmode="true" /></data>
+hRead = INVALID_HANDLE_VALUE, zeroing input buffer
+Sectors remaining 64<?xml version="1.0" encoding="UTF-8" ?><data><log value="Finished sector address 10816576" /></data>
+<?xml version="1.0" encoding="UTF-8" ?><data><response value="ACK" rawmode="false" /></data>
+Status: 0 The operation completed successfully.
+
