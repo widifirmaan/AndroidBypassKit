@@ -1,0 +1,59 @@
+#################################################firmware27#################################################
+#
+#  General Setting
+#
+############################################################################################################
+- general: MTK_PLATFORM_CFG
+  info: 
+    - config_version: V1.1.2
+      platform: MT6763
+      project: oppo6763_17101
+      storage: EMMC
+      boot_channel: MSDC_0
+      block_size: 0x20000
+############################################################################################################
+#
+#  Layout Setting
+#
+############################################################################################################
+
+
+
+
+- partition_index: SYS11
+  partition_name: frp
+  file_name: NONE
+  is_download: false
+  type: NORMAL_ROM
+  linear_start_addr: 0x5a88000
+  physical_start_addr: 0x5a88000
+  partition_size: 0x100000
+  region: EMMC_USER
+  storage: HW_STORAGE_EMMC
+  boundary_check: true
+  is_reserved: false
+  operation_type: INVISIBLE
+  is_upgradable: false
+  empty_boot_needed: false
+  reserve: 0x00
+
+
+
+- partition_index: SYS40
+  partition_name: userdata
+  file_name: f5_userdata.img
+  is_download: true
+  type: EXT4_IMG
+  linear_start_addr: 0x170800000
+  physical_start_addr: 0x170800000
+  partition_size: 0x200000000
+  region: EMMC_USER
+  storage: HW_STORAGE_EMMC
+  boundary_check: true
+  is_reserved: false
+  operation_type: UPDATE
+  is_upgradable: false
+  empty_boot_needed: false
+  reserve: 0x00
+
+

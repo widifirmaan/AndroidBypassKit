@@ -1,0 +1,32 @@
+Begin
+MediaTek SP Flash Tool v5.1812.00
+Build Time: Mar 28 2018 11:51:56
+Init config from config file
+Combo Format Command::Create
+General settings creat command
+General Command exec
+General Command ::LoadDA
+General Command ::LoadScatterFile
+General Command ::LoadRoms
+rom list is empty, auto load all roms
+rom list:Index(0), Enable(1),Path:D:\New Project\FRP V8 HWID\SDK\MTK\preloader_oppo6750_17351.bin
+rom list:Index(2), Enable(0),Path:
+General Command ::LoadAuthFile
+General Command ::LoadCertFile
+General command exec done!
+Connection create done!
+Command (0)::Execute
+Connecting to BROM...
+Scanning USB port...
+Search usb, timeout set as 10000 ms
+SearchUSBPortPool failed!
+Failed to find USB port
+Connect BROM failed: S_TIMEOUT
+Disconnect!
+Exception: err_code[1042], err_msg[ ERROR : S_TIMEOUT (1042)
+
+
+[HINT]:
+]
+
+Logger deinited.
