@@ -1,0 +1,20 @@
+[15:56:40] Start Find Available USB Port 
+[15:56:40] Find 0 LGE Mobile USB Serial Port (COM3)
+[15:56:40] CBasicComControl::Open, the port(COM 3) is constructed successfully => HANDLE : 0x1f4
+[15:56:40] CPort::OpenPort() Success. Port number is 3
+[15:56:40] [T000003] 41 54 0D                                                                                         AT.
+[15:56:41] CBasicCom::SendRecvPacket, PACKET_ERROR code = 1460 Msg =>  This operation returned because the timeout period expired.
+[15:56:41] [T000005] EF 00 16 65 7E                                                                                   ...e.
+[15:56:41] [R000007] EF 00 00 05 00 AD 7E                                                                             .......
+
+[15:56:41] [T000005] EF A0 1C C0 7E                                                                                   .....
+[15:56:41] [R000336] EF A0 00 00 00 00 00 4C 47 2D 48 39 33 32 00 00 00 48 39 33 32 32 30 72 00 00 00 00 00 00 00 00                                                                                                  .......LG-H932...H93220r........
+
+[15:56:41] CBasicCom::SendRecvPacket, the receive buffer is too small.
+You need 333 bytes. but you assigned the memory 147 bytes.
+[15:56:41] CComPort::ClosePort, Closed Port Successfully for COM 3
+[15:56:41] CBasicComControl::Close, the port(COM3) is closed successfully
+[15:56:41]   ==> COM3 is detected
+[15:56:41] ModelListManager is initialized
+[15:56:41] LGUP can't load the model[C:\Program Files (x86)\LG Electronics\LGUP\model\common\LGUP_common.dll]
+[15:56:46] CBasicComControl::IsConnected, the port(COM3) connection is not detected
