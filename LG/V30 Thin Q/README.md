@@ -1,5 +1,6 @@
 Root TWRP LG V30 Wxploitlaf
-——————————————
+
+
 DO WITH YOUR OWN RISK!
 H932 ONLY!
 
